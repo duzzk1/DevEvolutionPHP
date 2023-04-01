@@ -5,7 +5,9 @@ interface FormaGeometrica{
 }
 
 class Retangulo implements FormaGeometrica{
-    
+    function calcularPerimetro(){
+
+    }
 }
 
 class Retangulo implements FormaGeometrica{
