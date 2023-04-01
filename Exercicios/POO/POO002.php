@@ -4,6 +4,12 @@ use PSpell\Config;
 
 class ContaBancaria{
     private $saldo;
+
+    public function __construct($saldo)
+    {
+        $this->saldo = $saldo;
+        echo "Saldo inicial: $this->saldo\n";
+    }
     public function sacar($valor){
         if($this->saldo > $valor){
             echo "SACOU: $valor";
@@ -18,10 +24,13 @@ class ContaBancaria{
     }
     
     public function depositar($valor){
+        if ($valor > 0){
         echo "DEPOSITOU: $valor";
         $this->saldo += $valor;
         echo "\n";
-
+        }else{
+            echo "Você não pode depositar um valor negativo!\n";
+        }
     }
 
     public function getSaldo(){
@@ -34,7 +43,7 @@ class ContaBancaria{
 }
 
 
-$conta1 = new ContaBancaria();
+$conta1 = new ContaBancaria(5000);
 
 
 $conta1->depositar(2000);
@@ -48,6 +57,8 @@ $conta1->getSaldo();
 $conta1->sacar(250);
 
 $conta1->getSaldo();
+
+$conta1->depositar(-344);
 
 
 
