@@ -25,7 +25,7 @@ class Pilha{
 
 $canais = new Pilha;
 $canais->setItem("SBT");
-$canais->setItem("SPORTV 1");
+$canais->setItem("SPORTV 2");
 echo "Número de canais registrados: (antes do remove) ".$canais->sizePilha()."\n";
 $canais->removeItem();
 
