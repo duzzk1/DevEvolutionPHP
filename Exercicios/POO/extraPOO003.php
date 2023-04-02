@@ -128,7 +128,7 @@ class Administrativo extends Funcionarios
     }
 }
 
-$administrativo = new Administrativo("Eduardo", 124543, 2000);
+$administrativo = new Administrativo("Duzin", 642312, 1800);
 $administrativo->setHoras(15);
 
 echo "Funcionário: " . $administrativo->getNome() . "\n";
