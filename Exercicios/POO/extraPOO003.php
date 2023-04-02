@@ -110,7 +110,7 @@ class Administrativo extends Funcionarios
         return $this->horas;
     }
 
-    //Comissão
+    //Extras
 
     private function extras()
     {
